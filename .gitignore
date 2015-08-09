@@ -1,0 +1,12 @@
+*.egg
+*.egg-info
+.eggs/
+8.pyc
+*$py.class
+*.pt.py
+*.txt.py
+*~
+.*.swp
+.coverage
+.coverage.*
+.tox/
