@@ -1,7 +1,7 @@
 *.egg
 *.egg-info
 .eggs/
-8.pyc
+*.pyc
 *$py.class
 *.pt.py
 *.txt.py

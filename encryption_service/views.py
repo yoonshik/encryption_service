@@ -8,13 +8,13 @@ def my_view(request):
 @view_config(route_name='generatekey', renderer='json')
 def generatekey_view(request):
     key = generate_key()
-    print key
+    #print key
     return {'key': str(key)}
 
 @view_config(route_name='encrypt', renderer='json')
 def encrypt_view(request):
-    print str(request) + '\n\n\n'
-    key = request.json()['key']
+    msg = request.json()
+    key = msg['key']
     plain_text = request.json_body['plain_text']
     cipher_suite = get_cipher_suite(key)
     cipher_text = cipher_suite.encrypt(plain_text)
