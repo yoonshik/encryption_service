@@ -21,7 +21,7 @@ def decrypt(cipher_text, key):
     cipher_suite = Fernet(key)
     plain_text = cipher_suite.decrypt(cipher_text)
     return plain_text
-
+'''
 key = generate_key()
 print "KEY: " + key
 
@@ -32,3 +32,4 @@ print "CIPHER_TEXT: " + cipher_text
 
 plain_text = decrypt(cipher_text, key)
 print "PLAIN_TEXT: " + str(plain_text)
+'''
